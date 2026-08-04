@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - Agencia Beat</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/" style="text-decoration: none;">
+                <img src="/logo.png" alt="Logo" style="max-height: 45px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+        <nav>Últimas Noticias | Política | Economía | Sociedad</nav>
+    </header>
+
+    <main class="contenedor articulo-interior">
+        <h1>{{ .Title }}</h1>
+        <p class="bajada-interior"><em>{{ .Params.bajada }}</em></p>
+        <p class="fecha-interior">Publicado el {{ .Date.Format "02/01/2006" }}</p>
+        
+        <img src="{{ .Params.image }}" alt="Portada de la nota" class="imagen-interior">
+        
+        <div class="contenido-nota">
+            {{ .Content }}
+        </div>
+    </main>
+</body>
+</html>

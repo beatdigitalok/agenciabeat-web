@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Agencia Beat - Diario Digital</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Agencia Beat - Diario Digital</description>
+		<generator>Hugo</generator>
+		<language>es-ar</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 04 Aug 2026 17:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Agencia Beat revoluciona los medios digitales con su nueva plataforma</title>
+				<link>http://localhost:1313/posts/primera-noticia-copy-2/</link>
+				<pubDate>Tue, 04 Aug 2026 17:00:00 -0300</pubDate>
+				<guid>http://localhost:1313/posts/primera-noticia-copy-2/</guid>
+				<description>&lt;p&gt;Este es el cuerpo de la noticia. Aquí es donde escribirás todo el desarrollo periodístico de la nota, manteniendo el rigor y la dinámica que requiere la comunicación actual.&lt;/p&gt;&#xA;&lt;p&gt;Al usar Markdown, el flujo de redacción es rapidísimo. Si quieres resaltar algo en &lt;strong&gt;negrita&lt;/strong&gt;, solo lo envuelves en asteriscos. Si necesitas saltar de línea, simplemente dejas un renglón en blanco.&lt;/p&gt;&#xA;&lt;p&gt;Hugo toma esta información, procesa los metadatos de la parte superior (título, bajada, imagen) y los inyecta automáticamente en la portada del diario sin que tengas que tocar una sola línea de código HTML.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Agencia Beat revoluciona los medios digitales con su nueva plataforma</title>
+				<link>http://localhost:1313/posts/primera-noticia-copy-3/</link>
+				<pubDate>Tue, 04 Aug 2026 17:00:00 -0300</pubDate>
+				<guid>http://localhost:1313/posts/primera-noticia-copy-3/</guid>
+				<description>&lt;p&gt;Este es el cuerpo de la noticia. Aquí es donde escribirás todo el desarrollo periodístico de la nota, manteniendo el rigor y la dinámica que requiere la comunicación actual.&lt;/p&gt;&#xA;&lt;p&gt;Al usar Markdown, el flujo de redacción es rapidísimo. Si quieres resaltar algo en &lt;strong&gt;negrita&lt;/strong&gt;, solo lo envuelves en asteriscos. Si necesitas saltar de línea, simplemente dejas un renglón en blanco.&lt;/p&gt;&#xA;&lt;p&gt;Hugo toma esta información, procesa los metadatos de la parte superior (título, bajada, imagen) y los inyecta automáticamente en la portada del diario sin que tengas que tocar una sola línea de código HTML.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Agencia Beat revoluciona los medios digitales con su nueva plataforma</title>
+				<link>http://localhost:1313/posts/primera-noticia-copy/</link>
+				<pubDate>Tue, 04 Aug 2026 17:00:00 -0300</pubDate>
+				<guid>http://localhost:1313/posts/primera-noticia-copy/</guid>
+				<description>&lt;p&gt;Este es el cuerpo de la noticia. Aquí es donde escribirás todo el desarrollo periodístico de la nota, manteniendo el rigor y la dinámica que requiere la comunicación actual.&lt;/p&gt;&#xA;&lt;p&gt;Al usar Markdown, el flujo de redacción es rapidísimo. Si quieres resaltar algo en &lt;strong&gt;negrita&lt;/strong&gt;, solo lo envuelves en asteriscos. Si necesitas saltar de línea, simplemente dejas un renglón en blanco.&lt;/p&gt;&#xA;&lt;p&gt;Hugo toma esta información, procesa los metadatos de la parte superior (título, bajada, imagen) y los inyecta automáticamente en la portada del diario sin que tengas que tocar una sola línea de código HTML.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Agencia Beat revoluciona los medios digitales con su nueva plataforma</title>
+				<link>http://localhost:1313/posts/primera-noticia/</link>
+				<pubDate>Tue, 04 Aug 2026 17:00:00 -0300</pubDate>
+				<guid>http://localhost:1313/posts/primera-noticia/</guid>
+				<description>&lt;p&gt;Este es el cuerpo de la noticia. Aquí es donde escribirás todo el desarrollo periodístico de la nota, manteniendo el rigor y la dinámica que requiere la comunicación actual.&lt;/p&gt;&#xA;&lt;p&gt;Al usar Markdown, el flujo de redacción es rapidísimo. Si quieres resaltar algo en &lt;strong&gt;negrita&lt;/strong&gt;, solo lo envuelves en asteriscos. Si necesitas saltar de línea, simplemente dejas un renglón en blanco.&lt;/p&gt;&#xA;&lt;p&gt;Hugo toma esta información, procesa los metadatos de la parte superior (título, bajada, imagen) y los inyecta automáticamente en la portada del diario sin que tengas que tocar una sola línea de código HTML.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>http://localhost:1313/noticia-1/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/noticia-1/</guid>
+				<description>&lt;h1 id=&#34;hola-mundo&#34;&gt;Hola Mundo&lt;/h1&gt;&#xA;&lt;p&gt;Guarda estos 4 archivos en la carpeta de tu proyecto.Crea una carpeta llamada posts y pon un archivo de prueba llamado noticia-1.md escribiendo adentro # Hola Mundo y un texto corto abajo.Haz un Commit y sube todo a GitHub.¿Quieres que te recuerde cómo subir los archivos nuevos a tu cuenta de GitHub de la forma más rápida desde el navegador web?&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
