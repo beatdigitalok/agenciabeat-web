@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $p := where site.RegularPages "Section" "posts" }}
+{{ if gt (len $p) 0 }}
+{{ $main := index $p 0 }}
+<section class="container hero">
+  <a class="hero-main" href="{{ $main.Permalink }}">
+    {{ with $main.Params.imagen }}<img src="{{ . }}" alt="">{{ end }}
+    <span class="cat">{{ with index ($main.GetTerms "secciones") 0 }}{{ .Title }}{{ end }}</span>
+    <h2>{{ $main.Title }}</h2>
+  </a>
+  <div class="hero-side">
+    {{ range first 3 (after 1 $p) }}
+      {{ $url := .Permalink }}
+      <article>
+        {{ with .Params.imagen }}<a href="{{ $url }}"><img src="{{ . }}" loading="lazy" alt=""></a>{{ end }}
+        <h3><a href="{{ $url }}">{{ .Title }}</a></h3>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<div class="banner-negro"><div class="container">{{ site.Params.banner }}</div></div>
+
+<div class="container grilla">
+  {{ range first 8 (after 4 $p) }}{{ partial "card.html" . }}{{ end }}
+</div>
+{{ end }}
+
+{{ range site.Params.secciones_home }}
+  {{ $notas := index site.Taxonomies.secciones . }}
+  {{ if $notas }}
+  <section class="container bloque">
+    <h2 class="tit-seccion">{{ . }}</h2>
+    <div class="grilla">{{ range first 4 $notas }}{{ partial "card.html" . }}{{ end }}</div>
+  </section>
+  {{ end }}
+{{ end }}
+{{ end }}

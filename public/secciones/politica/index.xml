@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Politica on Agencia Beat</title>
+		<link>http://localhost:56633/secciones/politica/</link>
+		<description>Recent content in Politica on Agencia Beat</description>
+		<generator>Hugo</generator>
+		<language>es-ar</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 05 Aug 2025 12:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="http://localhost:56633/secciones/politica/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Bienvenido a Agencia Beat</title>
+				<link>http://localhost:56633/bienvenido-a-agencia-beat/</link>
+				<pubDate>Tue, 05 Aug 2025 12:00:00 -0300</pubDate>
+				<guid>http://localhost:56633/bienvenido-a-agencia-beat/</guid>
+				<description>&lt;p&gt;Este es el primer párrafo de la nota de ejemplo. Cuando el robot Python funcione, las noticias se escribirán solas con este formato.&lt;/p&gt;&#xA;&lt;p&gt;Segundo párrafo: el sistema usa Markdown, Obsidian y GitHub Pages. No depende de Blogger ni de WordPress.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

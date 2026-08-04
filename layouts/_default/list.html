@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="tit-seccion">{{ .Title }}</h1>
+  <div class="grilla">{{ range .Paginator.Pages }}{{ partial "card.html" . }}{{ end }}</div>
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

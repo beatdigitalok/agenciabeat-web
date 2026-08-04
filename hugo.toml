@@ -1,0 +1,54 @@
+baseURL = "https://agenciabeat.com/"
+languageCode = "es-ar"
+title = "Agencia Beat"
+paginate = 12
+summaryLength = 25
+
+[taxonomies]
+  seccion = "secciones"
+  tag = "tags"
+
+[params]
+  banner = "Agencia Beat: noticias en tiempo real, sin intermediarios"
+  secciones_home = ["politica", "economia", "judiciales", "deportes", "salud", "tecnologia", "medios", "internacionales"]
+
+[menu]
+[[menu.main]]
+    name = "Sociedad"
+    url = "/secciones/sociedad/"
+    weight = 1
+  [[menu.main]]
+    name = "Política"
+    url = "/secciones/politica/"
+    weight = 2
+  [[menu.main]]
+    name = "Economía"
+    url = "/secciones/economia/"
+    weight = 3
+  [[menu.main]]
+    name = "Judiciales"
+    url = "/secciones/judiciales/"
+    weight = 4
+  [[menu.main]]
+    name = "Deportes"
+    url = "/secciones/deportes/"
+    weight = 5
+  [[menu.main]]
+    name = "Salud"
+    url = "/secciones/salud/"
+    weight = 6
+  [[menu.main]]
+    name = "Tecnología"
+    url = "/secciones/tecnologia/"
+    weight = 7
+  [[menu.main]]
+    name = "Medios"
+    url = "/secciones/medios/"
+    weight = 8
+  [[menu.main]]
+    name = "Internacionales"
+    url = "/secciones/internacionales/"
+    weight = 9
+
+[permalinks]
+  posts = "/:slug/"

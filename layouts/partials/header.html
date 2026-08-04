@@ -1,0 +1,19 @@
+<div class="topbar"><div class="container">
+  <span>{{ now.Format "02/01/2006" }} · Buenos Aires, Argentina</span>
+  <nav><a href="/secciones/politica/">Temas del día</a><span class="vivo">● EN VIVO</span></nav>
+</div></div>
+
+<header class="header"><div class="container">
+  <a class="logo" href="/">AGENCIA<b>BEAT</b></a>
+  <nav class="nav">{{ range site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}</nav>
+</div></header>
+
+<div class="ticker"><div class="container">
+  <span><b>Dólar oficial:</b> $—</span><span><b>MEP:</b> $—</span><span><b>Blue:</b> $—</span>
+</div></div>
+
+{{ with index (where site.RegularPages "Section" "posts") 0 }}
+<div class="alerta"><div class="container">
+  <span class="tag">ALERTA</span><a href="{{ .Permalink }}">{{ .Title }}</a>
+</div></div>
+{{ end }}
