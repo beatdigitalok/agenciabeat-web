@@ -3,56 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Beat - Próximamente</title>
+    <title>Agencia Beat - Diario Digital</title>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .mantenimiento-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 70vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .mantenimiento-container h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            color: #111;
-        }
-        .mantenimiento-container p {
-            font-size: 18px;
-            color: #555;
-            max-width: 650px;
-            line-height: 1.6;
-        }
-        .badge-mantenimiento {
-            background: #cc0000;
-            color: white;
-            padding: 8px 18px;
-            border-radius: 4px;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 14px;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/logo.png" alt="Logo" style="max-height: 45px; width: auto; object-fit: contain;">
+            <a href="/">
+                <img src="/logo.png" alt="Logo" style="max-height: 45px; width: auto; object-fit: contain;">
+            </a>
         </div>
-        <nav>Agencia Beat - Medios & Comunicación</nav>
+        <nav>Últimas Noticias | Política | Economía | Sociedad</nav>
     </header>
 
-    <div class="contenedor">
-        <div class="mantenimiento-container">
-            <div class="badge-mantenimiento">Sitio en Mantenimiento</div>
-            <h1>Estamos renovando nuestra plataforma digital</h1>
-            <p>Muy pronto vas a poder disfrutar de todo el contenido periodístico, transmisiones y análisis con la nueva infraestructura tecnológica de Agencia Beat. Estamos afinando los últimos detalles.</p>
+    <main class="contenedor">
+        <!-- Noticia Principal (La más reciente) -->
+        {{ range first 1 .Site.RegularPages }}
+        <div class="noticia-principal" style="display: flex; gap: 20px; background: white; padding: 20px; margin-bottom: 30px; border-radius: 5px;">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 50%; height: auto; object-fit: cover; border-radius: 4px;">
+            <div class="info-principal" style="width: 50%;">
+                <span style="background: #cc0000; color: white; padding: 4px 8px; font-size: 12px; font-weight: bold; border-radius: 3px;">ÚLTIMO MOMENTO</span>
+                <h1 style="font-size: 32px; margin: 15px 0; line-height: 1.2;"><a href="{{ .RelPermalink }}" style="color: #111; text-decoration: none;">{{ .Title }}</a></h1>
+                <p style="font-size: 18px; color: #555; line-height: 1.5;">{{ .Params.bajada }}</p>
+            </div>
         </div>
-    </div>
+        {{ end }}
+
+        <!-- Grilla de noticias secundarias -->
+        <div class="grilla-noticias" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+            {{ range after 1 (first 7 .Site.RegularPages) }}
+            <div class="card-noticia" style="background: white; padding: 15px; border-radius: 5px; border: 1px solid #ddd;">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: 160px; object-fit: cover; border-radius: 3px; margin-bottom: 10px;">
+                <h3 style="font-size: 18px; line-height: 1.3;"><a href="{{ .RelPermalink }}" style="color: #111; text-decoration: none;">{{ .Title }}</a></h3>
+            </div>
+            {{ end }}
+        </div>
+    </main>
 </body>
 </html>
