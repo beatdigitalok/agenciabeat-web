@@ -1,5 +1,5 @@
 <footer class="footer"><div class="container">
   <div><h4>AGENCIA BEAT</h4><p>Periodismo en tiempo real.<br>agenciabeat.com</p></div>
-  <div><h4>SECCIONES</h4>{{ range site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a><br>{{ end }}</div>
+  <div><h4>SECCIONES</h4>{{ range site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a><br>{{ end }}</div>
   <div><h4>© {{ now.Year }}</h4><p>Todos los derechos reservados.</p></div>
 </div></footer>
