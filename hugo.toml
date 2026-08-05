@@ -1,8 +1,10 @@
 baseURL = "https://agenciabeat.com/"
 languageCode = "es-ar"
 title = "Agencia Beat"
-paginate = 12
 summaryLength = 25
+
+[pagination]
+  pagerSize = 12
 
 [taxonomies]
   seccion = "secciones"
@@ -13,11 +15,11 @@ summaryLength = 25
   secciones_home = ["politica", "economia", "judiciales", "deportes", "salud", "tecnologia", "medios", "internacionales"]
 
 [menu]
-[[menu.main]]
+  [[menu.main]]
     name = "Sociedad"
     url = "/secciones/sociedad/"
     weight = 1
-  [[menu.main]]
+    [[menu.main]]
     name = "Política"
     url = "/secciones/politica/"
     weight = 2
