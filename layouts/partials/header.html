@@ -12,7 +12,7 @@
   <span><b>Dólar oficial:</b> $—</span><span><b>MEP:</b> $—</span><span><b>Blue:</b> $—</span>
 </div></div>
 
-{{ with index (where site.RegularPages "Section" "posts") 0 }}
+{{ range first 1 (where site.RegularPages "Section" "posts") }}
 <div class="alerta"><div class="container">
   <span class="tag">ALERTA</span><a href="{{ .Permalink }}">{{ .Title }}</a>
 </div></div>

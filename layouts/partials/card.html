@@ -1,6 +1,6 @@
 {{ $p := . }}
 <article class="card">
   {{ with $p.Params.imagen }}<a href="{{ $p.Permalink }}"><img src="{{ . }}" loading="lazy" alt=""></a>{{ end }}
-  <span class="cat">{{ with index ($p.GetTerms "secciones") 0 }}{{ .Title }}{{ end }}</span>
+  <span class="cat">{{ range first 1 ($p.GetTerms "secciones") }}{{ .Title }}{{ end }}</span>
   <h3><a href="{{ $p.Permalink }}">{{ $p.Title }}</a></h3>
 </article>

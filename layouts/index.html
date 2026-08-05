@@ -5,7 +5,7 @@
 <section class="container hero">
   <a class="hero-main" href="{{ $main.Permalink }}">
     {{ with $main.Params.imagen }}<img src="{{ . }}" alt="">{{ end }}
-    <span class="cat">{{ with index ($main.GetTerms "secciones") 0 }}{{ .Title }}{{ end }}</span>
+    <span class="cat">{{ range first 1 ($main.GetTerms "secciones") }}{{ .Title }}{{ end }}</span>
     <h2>{{ $main.Title }}</h2>
   </a>
   <div class="hero-side">

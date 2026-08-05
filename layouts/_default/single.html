@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="container nota">
-  <span class="cat">{{ with index (.GetTerms "secciones") 0 }}{{ .Title }}{{ end }}</span>
+  <span class="cat">{{ range first 1 (.GetTerms "secciones") }}{{ .Title }}{{ end }}</span>
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<p class="bajada">{{ . }}</p>{{ end }}
   <div class="meta">{{ .Date.Format "02/01/2006 15:04" }} · Agencia Beat</div>
